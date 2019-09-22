@@ -1,6 +1,6 @@
 function dwarfRollCall(dwarves) {
   var thing = '';
- for (var i = 0; i < dwarves.length; i++){
+ for (var i = dwarves.length/2; i < dwarves.length; i++){
  thing +=`${[i+1]}. ${dwarves[i]} `;
   }
  return thing ;
@@ -25,10 +25,22 @@ function longPlaneteerCalls(words) {
 }
 //should tell us if the calls is longer than 4 characters
 function findTheCheese (foods) {
- for (var i=0; foods.length; i++){
+ for (var i=0; i < foods.length; i++){
     if (foods[i] ===  'gouda'|| foods[i]===  'cheddar' || foods[i]==='camembert') {
       return foods[i];
     }
  }
 return "no cheese!"
 }
+//look through string and return first cheese
+//if no cheese in receipe return no cheese
+//function findTheword (words) 
+//..  var bucket = [];
+ // for (var i=0; i < words.length; i++){
+ //   if (words[i].startsWith("b")) {
+  //    bucket.push(words[i])
+    }
+  }
+ .. return bucket; 
+}
+//array of words, give me back new words only start with b 
